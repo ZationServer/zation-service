@@ -1,0 +1,30 @@
+{
+  "name": "zation-service",
+  "version": "0.2.0",
+  "license": "MIT",
+  "description": "API for Zation services",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "gulp compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZationServer/zation-service.git"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "author": {
+    "name": "Luca Scarignella",
+    "email": "lucacode1@gmail.com",
+    "url": "https://luca.scaringella.de"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "4.0.0",
+    "gulp-typescript": "5.0.0-alpha.3",
+    "typescript": "2.9.2"
+  }
+}
