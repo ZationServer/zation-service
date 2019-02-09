@@ -11,8 +11,8 @@ export interface ServiceModule<Config,Created,Get> {
    serviceName : string,
    service : CustomService<Config,Created,Get> | Record<string,Config> | DefaultConfig<Config>;
    bagExtensions : {
-       smallBagCompatible  : boolean;
-       methods : Record<string,Function>;
+       smallBag : Record<string,Function>;
+       bag : Record<string,Function>;
    }
 }
 
