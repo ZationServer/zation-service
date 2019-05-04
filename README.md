@@ -25,7 +25,7 @@ It allows the service modules to extend the Bag or SmallBag with extra functiona
 Also, it has support for building more instances of an specific kind of service with different configurations. 
 A use case for this could be to creating more MySQL connections with different settings.  
 You also can create your own service modules with this interface, 
-for understanding how this works you can look in the interface or look in predefined service modules that use this package.
+for understanding how this works you can look in the interface or look in predefined service modules that make use of this package.
 Some example packages are the [zation-service-mysql](https://github.com/ZationServer/zation-service-mysql) or [zation-service-nodemailer](https://github.com/ZationServer/zation-service-nodemailer).
 
 ## License
