@@ -7,12 +7,12 @@ GitHub: LucaCode
 export type CustomServiceCreateFunction<T,C> = (config : C,name : string) => Promise<T> | T;
 export type CustomServiceGetFunction<T,R> = (service : T) => Promise<R> | R;
 
-export interface ServiceModule<Config,Created,Get> {
+export interface ServiceModule<Config,Created,Get,SmallBagEx = Record<string,any>,BagEx = Record<string,any>> {
    serviceName : string,
    service : CustomService<Config,Created,Get> | Record<string,Config> | DefaultConfig<Config>;
    bagExtensions : {
-       smallBag ?: Record<string,any>;
-       bag ?: Record<string,any>;
+       smallBag ?: SmallBagEx;
+       bag ?: BagEx;
    }
 }
 
