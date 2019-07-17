@@ -7,7 +7,7 @@ GitHub: LucaCode
 export type CustomServiceCreateFunction<T,C> = (config : C,name : string) => Promise<T> | T;
 export type CustomServiceGetFunction<T,R> = (service : T) => Promise<R> | R;
 
-export interface ServiceModule<Config,Created,Get,BagEx = Record<string,any>,ReqBagEx = Record<string,any>> {
+export interface ServiceModule<Config,Created,Get,BagEx = Record<string,any>,RequestBagEx = Record<string,any>> {
     /**
      * The name of the service.
      * @example 'MySQL','NodeMailer','MongoDB'
@@ -22,7 +22,7 @@ export interface ServiceModule<Config,Created,Get,BagEx = Record<string,any>,Req
      */
    bagExtensions : {
        bag ?: BagEx;
-       reqBag ?: ReqBagEx;
+       requestBag ?: RequestBagEx;
    }
 }
 
