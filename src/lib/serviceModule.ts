@@ -7,7 +7,7 @@ GitHub: LucaCode
 export type CustomServiceCreateFunction<T,C> = (config : C,name : string) => Promise<T> | T;
 export type CustomServiceGetFunction<T,R> = (service : T) => Promise<R> | R;
 
-export interface ServiceModule<Config,Created,Get,SmallBagEx = Record<string,any>,BagEx = Record<string,any>> {
+export interface ServiceModule<Config,Created,Get,BagEx = Record<string,any>,ReqBagEx = Record<string,any>> {
     /**
      * The name of the service.
      * @example 'MySQL','NodeMailer','MongoDB'
@@ -21,8 +21,8 @@ export interface ServiceModule<Config,Created,Get,SmallBagEx = Record<string,any
      * The bag extensions, same as one bag extension of the app configuration from the zation server.
      */
    bagExtensions : {
-       smallBag ?: SmallBagEx;
        bag ?: BagEx;
+       reqBag ?: ReqBagEx;
    }
 }
 
