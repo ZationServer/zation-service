@@ -4,8 +4,12 @@ GitHub: LucaCode
 ©Copyright by Luca Scaringella
  */
 
-import {ServiceModule} from "./lib/serviceModule";
+import {ServiceModule,Service,DefaultInstance,CustomServiceCreateFunction,CustomServiceGetFunction} from "./lib/serviceModule";
 
 export {
-       ServiceModule
-    };
+    ServiceModule,
+    Service,
+    DefaultInstance,
+    CustomServiceCreateFunction,
+    CustomServiceGetFunction
+};
