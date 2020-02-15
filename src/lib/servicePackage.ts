@@ -4,16 +4,16 @@ GitHub: LucaCode
 ©Copyright by Luca Scaringella
  */
 
-export interface ServiceModule<Config,Created,Get> {
+export interface ServicePackage<Config,Created,Get> {
     /**
-     * The Service Module.
+     * The Service Package.
      * The keys are the name of the exported services.
      * For example 'MySQL','NodeMailer','MongoDB'.
      * The value is the service configuration.
      * If you want to register bag extensions for a service,
      * you should look at the 'zation-bag-extension' package.
      * You also can check out the already created
-     * service modules: 'zation-service-nodemailer' or 'zation-service-mysql'.
+     * service packages: 'zation-service-nodemailer' or 'zation-service-mysql'.
      */
     [serviceName: string] : Service<Config,Config,Get>;
 }
