@@ -13,7 +13,7 @@ export interface ServicePackage<Config,Instance,Get = Instance> {
      * If you want to register bag extensions for a service,
      * you should look at the 'zation-bag-extension' package.
      * You also can check out the already created
-     * service packages: 'zation-service-nodemailer' or 'zation-service-mysql'.
+     * service packages for example: 'zation-service-nodemailer' or 'zation-service-mysql'.
      */
     [serviceName: string] : Service<Config,Instance,Get>;
 }
