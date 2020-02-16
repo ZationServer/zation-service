@@ -4,7 +4,8 @@ GitHub: LucaCode
 ©Copyright by Luca Scaringella
  */
 
-import {ServicePackage,Service,DefaultInstance,ServiceCreateFunction,ServiceGetFunction} from "./lib/servicePackage";
+import {ServicePackage} from "./lib/servicePackage";
+import {Service,DefaultInstance,ServiceCreateFunction,ServiceGetFunction} from './lib/service';
 
 export {
     ServicePackage,
