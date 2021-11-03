@@ -16,13 +16,13 @@
     "url": "https://github.com/ZationServer/zation-service.git"
   },
   "files": [
-    "dist/**/*"
+    "dist/**/*",
+    "!.DS_Store"
   ],
   "author": {
     "name": "Ing. Luca Gian Scaringella",
     "email": "lucacode1@gmail.com"
   },
-  "dependencies": {},
   "devDependencies": {
     "typescript": "^3.7.5"
   }
