@@ -1,7 +1,7 @@
 /*
-Author: Luca Scaringella
+Author: Ing. Luca Gian Scaringella
 GitHub: LucaCode
-©Copyright by Luca Scaringella
+Copyright(c) Ing. Luca Gian Scaringella
  */
 
 export type ServiceCreateFunction<Instance,Config> = (config: Config, instanceName: string) => Promise<Instance> | Instance;
