@@ -1,5 +1,15 @@
 # zation-service ⚙️
 *API for zation services.*
+
+<h1 align="center">
+  <!-- Logo -->
+  <br/>
+  <a href="https://zation.io">
+      <img src="https://zation.io/img/zationWideLogo.svg" alt="Logo Zation" height="200"/>
+  </a>
+  <br/>
+</h1>
+
 <h1 align="center">  
   <!-- Stability -->
   <a href="https://nodejs.org/api/documentation.html#documentation_stability_index">
